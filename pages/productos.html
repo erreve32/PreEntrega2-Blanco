@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class=" menu-navegacion navbar navbar-expand-md navbar-ligth" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" menu-navegacion collapse navbar-collapse" id="navbar-toggler">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/logo.png" alt="logo" height="50px">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="ayuda.html">Ayuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactanos.html">Contactanos</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <aside class="options-panel card" data-bs-theme="dark">
+            <div class="filters">
+                <div class="filter-option">
+                    <h3>Disponibilidad:</h3>
+                    <label class="form-check">
+                        <input class="form-check-input" type="radio" name="availability" value="en-stock">En Stock (9)
+                    </label><br>
+                    <label class="form-check">
+                        <input class="form-check-input" type="radio" name="availability" value="agotado">Agotado (5)
+                    </label>
+                </div>
+                <div class="filter-option">
+                    <h3>Rango de Precio:</h3>
+                    <input type="range" name="price-range" min="0" max="100000" step="10">
+                    <span id="price-value">0</span> $ - <span id="max-price">100,000</span> $
+                </div>
+                <div class="filter-option form-check">
+                    <h3>Tipo de Producto:</h3>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="bermudas">Bermudas</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="remeras">remeras</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="camperas">camperas</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="pantalones">pantalones</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="buzos">Buzos</label><br>
+                </div>
+                <div class="filter-option form-check">
+                    <h3>Marca:</h3>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="balenciaga">balenciaga</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type" value="luis-vuitton">Luis
+                        Vuitton</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="zara">Zara</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="versace">Versace</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="nike">Nike</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="adidas">Adidas</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type" value="under-armour">Under
+                        Armour</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="gucci">Gucci</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type" value="the-north-face">The
+                        Nort Face</label>
+
+                </div>
+                <div class="filter-option form-check">
+                    <h3>Talles:</h3>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="bermudas">XS</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="bermudas">S</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="bermudas">M</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="bermudas">L</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="bermudas">XL</label><br>
+                    <label><input class="form-check-input" type="radio" name="product-type"
+                            value="bermudas">XXL</label><br>
+                </div>
+            </div>
+        </aside>
+        <section class="store-items">
+            <div class="store-item">
+                <img src="../assets/producto-1.jpg" alt="Buzo Ocn Negro">
+                <h3>Buzo H Kang Negro</h3>
+                <p>Precio: $13,725</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-2.jpg" alt="Buzo Ocn Verde">
+                <h3>Buzo Ocn H Basic Color Botanico Verde</h3>
+                <p>Precio: $7,492</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-3.jpg" alt="Jean Negro">
+                <h3>Jean Ocn H SL Total Black Plus Size /Talles Reales Hombre </h3>
+                <p>Precio: $22,600</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-4.jpg" alt="Buzo Ocn Gris">
+                <h3>Buzo Ocn M Arrow Gris Snow 273</h3>
+                <p>Precio: $11,242</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-5.jpg" alt="Joggin Kingpin Mujer">
+                <h3>Jogging Kingpin Mujer King Julls 343 Melange </h3>
+                <p>Precio: $13,230</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-6.jpg" alt="Campera Mujer Negra">
+                <h3>Campera Mujer Ocn Puffer Diamond Negra</h3>
+                <p>Precio: $37,425</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-7.jpg" alt="Buzo Canguro Negro">
+                <h3>Buzo Ocn N Canguro Original Negro </h3>
+                <p>Precio: $6,742</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-8.jpg" alt="Buzo Ocn Niños/as">
+                <h3>Buzo Ocn Niños/as Canguro Original</h3>
+                <p>Precio: $6,742</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-9.jpg" alt="Campera Niño Verde">
+                <h3>Camisa Niño Ocn ML Dublin Cuadrille Verde </h3>
+                <p>Precio: $15,992</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-10.jpg" alt="Buzo Ocn Rosa">
+                <h3>Buzo Ocn Na Cozy Hood Rosa </h3>
+                <p>Precio: $7,492</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-11.jpg" alt="Jogging Niña Rosa">
+                <h3>Jogging Niña Blair Suoer Pink </h3>
+                <p>Precio: $8,991</p>
+            </div>
+            <div class="store-item">
+                <img src="../assets/producto-12.jpg" alt="Buzo Ocn Niña Negro">
+                <h3>Buzo Ocn N Original Negro</h3>
+                <p>Precio: $5,625</p>
+            </div>
+        </section>
+    </main>
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="../assets/logo.png" alt="logo de Portafolio" width="250px"><br>
+        <p class="footer-texto text-center">Aprendo y creo todos los dias.</p>
+        <div class="social-icon d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://www.instagram.com/erreve.32/?next=%2F" target="_blank" reel="noopener noreferrer">
+                <img src="../assets/instagram.svg" alt="instagram">
+            </a>
+            <a href="https://github.com/erreve32" target="_blank" reel="noopener noreferrer">
+                <img src="../assets/github.svg" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/rodrigo-blanco-278078280/" target="_blank" reel="noopener noreferrer">
+                <img src="../assets/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="mailto:rodrigoablanco32@gmail.com" target="_blank" reel="noopener noreferrer">
+                <img src="../assets/envelope.svg" alt="mail">
+            </a>
+        </div>
+        <div class="derechos-de-autor">
+            <p>&copy; 2023 Rodrigo Blanco. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
